@@ -70,3 +70,13 @@ bower_components/
 .grunt/
 src/vendor/
 dist/
+/bin/
+/target/
+/.settings/
+/vs/
+/build/
+/.gradle/
+.idea
+*.vcxproj
+*.vcxproj.filters
+*.iml
