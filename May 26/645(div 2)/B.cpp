@@ -18,7 +18,7 @@ int main()
             /* code */
             cin >> arr[i];
         }
-        sort(arr, arr + n);
+        sort(arr, arr + n + 1);
         int ini = n;
         for (int i = n; i >= 0; i--)
         {
@@ -29,4 +29,4 @@ int main()
         }
         cout << ini + 1 << endl;
     }
-} 
+}
