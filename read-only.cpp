@@ -12,9 +12,11 @@ typedef long long ll;
     cin.tie(0)
 
 #define TEST(test) \
+    int test;      \
     cin >> test;   \
     while (test--)
 
+#define cll(a, b) cin >> a >> b
 #define YES cout << "YES\n"
 #define NO cout << "NO\n"
 

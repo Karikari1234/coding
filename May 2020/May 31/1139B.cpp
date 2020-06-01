@@ -29,4 +29,23 @@ typedef long long ll;
 int main()
 {
     FASTIO;
+    int n, i;
+    cin >> n;
+    ll arr[n];
+    REP(i, 0, n)
+    {
+        cin >> arr[i];
+    }
+    ll sum = INT_MAX;
+    ll ans = 0;
+    for (int i = n - 1; i >= 0; i--)
+    {
+        sum = min(sum - 1, arr[i]);
+        if (sum < 0)
+            sum = 0;
+
+        ans += sum;
+    }
+    
+    cout << ans << endl;
 }

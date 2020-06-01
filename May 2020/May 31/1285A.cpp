@@ -25,8 +25,13 @@ typedef long long ll;
 
 #define si set<int>
 #define si_iterator set<int>::iterator
-
+int l = 0, r = 0;
 int main()
 {
     FASTIO;
+    int x;
+    cin >> x;
+    string s;
+    cin >> s;
+    cout << 1 + s.size() << endl;
 }

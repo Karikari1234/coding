@@ -29,4 +29,7 @@ typedef long long ll;
 int main()
 {
     FASTIO;
+    int n, S;
+    cin >> n >> S;
+    cout << (int)ceil((double)S / n) << endl;
 }

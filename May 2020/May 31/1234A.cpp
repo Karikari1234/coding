@@ -4,7 +4,8 @@ using namespace std;
 
 typedef long long ll;
 
-#define REP(i, a, b) for (i = a; i < b; i++)
+#define REP(i, a, b) \
+    for (i = a; i < b; i++)
 #define REP_ITER(it, v) for (it = v.begin(); it != v.end(); it++)
 
 #define FASTIO                   \
@@ -25,8 +26,23 @@ typedef long long ll;
 
 #define si set<int>
 #define si_iterator set<int>::iterator
-
+int maxi = INT_MIN;
 int main()
 {
     FASTIO;
+    TEST(test)
+    {
+        ll a;
+        cin >> a;
+        int arr[a];
+        ll sum = 0;
+        int i;
+        REP(i, 0, a)
+        {
+            cin >> arr[i];
+            //maxi = max(maxi, arr[a]);
+            sum += arr[i];
+        }
+        cout << (int)ceil((double)sum / a) << endl;
+    }
 }
