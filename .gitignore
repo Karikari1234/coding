@@ -80,3 +80,5 @@ dist/
 *.vcxproj
 *.vcxproj.filters
 *.iml
+
+.vscode/
