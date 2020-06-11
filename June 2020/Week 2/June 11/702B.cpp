@@ -26,35 +26,39 @@ typedef long long ll;
 #define si set<int>
 #define si_iterator set<int>::iterator
 
-double pi = 2 * acos(0.0);
-
 int main()
 {
     FASTIO;
-    ll n;
+    ll i, j, k, l, m, n, o, p, x, y, z, cnt = 0;
     cin >> n;
-    int arr[n], i, prefix[n], sum = 0;
+    ll arr[n];
+    map<ll, ll> mp;
+    vector<ll> v;
+    x = 2;
+    while (x <= 2 * (1e9))
+    {
+        v.push_back(x);
+        x *= 2;
+    }
     REP(i, 0, n)
     {
         cin >> arr[i];
-        sum += arr[i];
-        prefix[i] = sum;
+        mp[arr[i]]++;
     }
-    ll x, y;
-    cin >> x >> y;
-    // if (sum >= x && sum <= y)
-    // {
-    //     cout << 1 << endl;
-    //     return 0;
-    // }
-    REP(i, 0, n - 1)
+    REP(i, 0, n)
     {
-        //cout << prefix[i] << " and " << sum - prefix[i] << endl;
-        if ((prefix[i] >= x && prefix[i] <= y) && (sum - prefix[i] >= x && sum - prefix[i] <= y))
+        REP(j, 0, v.size())
         {
-            cout << i + 2 << endl;
-            return 0;
+            z = v[j] - arr[i];
+            if (mp[z])
+            {
+                //cout << "mapppp " << mp[z] << endl;
+                if (z == arr[i])
+                    cnt += (mp[z] - 1);
+                else
+                    cnt += mp[z];
+            }
         }
     }
-    cout << 0 << endl;
+    cout << cnt / 2;
 }
