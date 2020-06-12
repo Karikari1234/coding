@@ -21,4 +21,7 @@ List of directories
     }
 ```
 
+Follow me on LinkedIn: [Monzur Rahman](https://www.linkedin.com/in/monzur-rahman-baba02190/)
+![LinkedIn](https://image.flaticon.com/icons/svg/174/174857.svg = =50x50)
+
 
