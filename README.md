@@ -21,9 +21,12 @@ List of directories
     }
 ```
 
+
+
 Follow me on LinkedIn: [Monzur Rahman](https://www.linkedin.com/in/monzur-rahman-baba02190/)
 
+Codeforces handle: [Kari_Kari](https://codeforces.com/profile/Kari_Kari)
 
-![LinkedIn](./utils/linkedin.png)
+![LinkedIn](./utils/linkedin.png) ![Codeforces](./utils/codeforces.png )
 
 
