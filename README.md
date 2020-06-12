@@ -1,14 +1,15 @@
-# coding
+# Competitive Programming
+
 This is a github repository that stores all my competitive programming codes.
 
 List of directories
 
-* Algorithm
-* June 2020
-* May 2020
-* unorganized
-* read-only.cpp
-* changeable-template.cpp
+- Algorithm
+- June 2020
+- May 2020
+- unorganized
+- read-only.cpp
+- changeable-template.cpp
 
 ```C++
     #include<bits/stdc++.h>
@@ -21,12 +22,8 @@ List of directories
     }
 ```
 
-
-
 Follow me on LinkedIn: [Monzur Rahman](https://www.linkedin.com/in/monzur-rahman-baba02190/)
 
 Codeforces handle: [Kari_Kari](https://codeforces.com/profile/Kari_Kari)
 
-![LinkedIn](./utils/linkedin.png) ![Codeforces](./utils/codeforces.png )
-
-
+![LinkedIn](./utils/linkedin.png) ![Codeforces](./utils/codeforces.png)
