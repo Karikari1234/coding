@@ -26,5 +26,4 @@ Follow me on LinkedIn: [Monzur Rahman](https://www.linkedin.com/in/monzur-rahman
 
 Codeforces handle: [Kari_Kari](https://codeforces.com/profile/Kari_Kari)
 
-<img src="./utils/linkedin.png" width="60"> 
-<img src="./utils/codeforces.png" width="60">
+<a href="https://www.linkedin.com/in/monzur-rahman-baba02190/"><img src="./utils/linkedin.png" width="60"></a> <a href="https://codeforces.com/profile/Kari_Kari"><img src="./utils/codeforces.png" width="60"></a>
