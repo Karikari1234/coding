@@ -70,7 +70,7 @@ int main()
         if (x == 0 || (y != 0 && y != n))
         {
             YES;
-            cout << x << y << endl;
+            //cout << x << y << endl;
         }
         else
             NO;
