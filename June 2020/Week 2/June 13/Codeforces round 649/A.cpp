@@ -50,7 +50,7 @@ int main()
         if (cnt == n)
         {
             cout << -1 << endl;
-            return 0;
+            continue;
         }
         ll ini = 0;
         for (int j = n - 1, i = 0; j >= 0; j--, i++)
