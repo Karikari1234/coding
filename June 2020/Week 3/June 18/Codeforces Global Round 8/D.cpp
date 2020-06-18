@@ -26,8 +26,7 @@ typedef long long ll;
 #define si set<int>
 #define si_iterator set<int>::iterator
 
-double pi = 2 * acos(0.0);
-int i, j;
+int i,j;
 int main()
 {
     FASTIO;

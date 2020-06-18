@@ -26,9 +26,28 @@ typedef long long ll;
 #define si set<int>
 #define si_iterator set<int>::iterator
 
+int j;
 double pi = 2 * acos(0.0);
-int i, j;
 int main()
 {
     FASTIO;
+    TEST(test)
+    {
+        ll a, b, n, i = 0;
+        cin >> a >> b >> n;
+        while (a <= n && b <= n)
+        {
+            if (a <= b)
+            {
+                a += b;
+            }
+            else
+            {
+                b += a;
+            }
+            i++;
+            //cout << a << " " << b << endl;
+        }
+        cout << i << endl;
+    }
 }
