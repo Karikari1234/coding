@@ -22,7 +22,7 @@ List of directories
     }
 ```
 
-Follow me on LinkedIn: [Monzur Rahman](https://www.linkedin.com/in/monzur-rahman-baba02190/)
+Follow me on LinkedIn: [Monzur Rahman](http://www.linkedin.com/in/monzur-rahman-nafiz)
 
 Codeforces handle: [Kari_Kari](https://codeforces.com/profile/Kari_Kari)
 
