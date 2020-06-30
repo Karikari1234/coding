@@ -36,7 +36,6 @@ int main()
         string s;
         cin >> s;
         ll f = 0;
-        //string ans = "";
         char abc[s.size()] = {'?'};
         if (s.size() == 1)
         {
@@ -59,10 +58,7 @@ int main()
         {
             abc[i] = s[i];
         }
-        // REP(i, 0, s.size())
-        // {
-        //     cout << ans[i] << endl;
-        // }
+
         REP(i, 0, s.size())
         {
             if (s[i] == '?' && i == 0)
