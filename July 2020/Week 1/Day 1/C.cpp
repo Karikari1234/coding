@@ -17,8 +17,8 @@ typedef long long ll;
     while (test--)
 
 #define cll(a, b) cin >> a >> b
-#define YES cout << "YES\n"
-#define NO cout << "NO\n"
+#define YES cout << "Yes\n"
+#define NO cout << "No\n"
 
 #define vi vector<int>
 #define vi_iterator vector<int>::iterator
@@ -33,15 +33,21 @@ int main()
     FASTIO;
     TEST(test)
     {
-        ll n;
-        cin >> n;
-        if (n % 2)
+        ll a, b, n, m;
+        cin >> a >> b >> n >> m;
+        if (a + b < n + m)
         {
-            cout << (n / 2) + 1 << endl;
+            NO;
         }
         else
         {
-            cout << n / 2 << endl;
+            if (min(a, b) >= m && max(a, b) >= n)
+            {
+                YES;
+            }
+            else
+            {
+            }
         }
     }
 }
