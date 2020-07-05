@@ -31,21 +31,4 @@ int i, j;
 int main()
 {
     FASTIO;
-    ll n, k;
-    cin >> n >> k;
-    if (k < n * 2)
-    {
-        NO;
-    }
-    else
-    {
-        YES;
-        REP(i, 0, n - 1)
-        {
-            cout << 2 << " ";
-        }
-        //cout << (2 * (n - 1)) << endl;
-        cout << k - 2 * (n - 1) << endl;
-        cout << 1 << endl;
-    }
 }
