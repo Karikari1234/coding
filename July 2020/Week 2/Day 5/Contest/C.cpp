@@ -31,25 +31,31 @@ int i, j;
 int main()
 {
     FASTIO;
-    ll n;
-    cin >> n;
-    ll arr[n + 1], sum = 0, cnt = 0, ans = 0;
-    REP(i, 1, n + 1)
+    TEST(test)
     {
-        cin >> arr[i];
-        sum += arr[i];
+        unsigned long long int n, x;
+        cin >> n >> x;
+        unsigned long long int arr[n];
+        REP(i, 0, n)
+        {
+            cin >> arr[i];
+        }
+        sort(arr, arr + n);
+        i = n - 1, j = n - 1;
+        unsigned long long int teams = 0;
+        while (i >= 0 && j >= 0)
+        {
+
+            if ((j - i + 1) * arr[i] < x)
+                i--;
+            else
+            {
+
+                i--;
+                j = i;
+                teams++;
+            }
+        }
+        cout << teams << endl;
     }
-    REP(i, 1, n + 1)
-    {
-        cnt += arr[i];
-        i++;
-    }
-    ans = cnt;
-    REP(i, 1, n)
-    {
-        cnt = sum - cnt + arr[i];
-        ans = max(ans, cnt);
-        //cout << ans << endl;
-    }
-    cout << ans << endl;
 }
