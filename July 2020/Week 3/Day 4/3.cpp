@@ -33,29 +33,50 @@ int main()
     FASTIO;
     TEST(test)
     {
-        ll n,bare=0,val=INT_MIN,swtch=-1;
+        ll n, bare = 0, val = 0, swtch = -1, peak = 0, finddd = -100;
         cin >> n;
         ll arr[n];
+        vi v;
+        vi_iterator it;
         REP(i, 0, n)
         {
             cin >> arr[i];
+            //if (find(v.begin(), v.end(), arr[i]) == v.end())
+            //{
+            v.push_back(arr[i]);
+            //}
         }
-        for (int k = n - 1; k >= 1; k--)
+        for (j = v.size() - 1; j >= 0; j--)
         {
-            if (arr[k] < arr[k - 1]&&(swtch==-1||swtch))
+            //cout << v[j] << " hello ";
+            if (j + 1 < v.size() && j - 1 >= 0)
             {
-                bare++;
-                swtch = 1;
+                if (v[j] > v[j + 1] && v[j] > v[j - 1])
+                {
+                    peak++;
+                }
+                //cout << v[j - 1] << " " << v[j] << " " << v[j + 1];
             }
-            if(bare==2){
-                val = k;
+            if (peak == 2)
+            {
+                finddd = v[j];
+                //cout << "peeeakk\n";
             }
-            if(swtch==1&&arr[k]>arr[k-1]){
-                swtch=0;
-            }
-
         }
-        if(bare<=1){
+        //cout << endl;
+        if (finddd != -100)
+        {
+            REP(i, 0, n)
+            {
+                if (finddd == arr[i])
+                {
+                    val = i + 1;
+                }
+            }
+        }
+
+        if (peak >= 1)
+        {
             val = 0;
         }
         cout << val << endl;
