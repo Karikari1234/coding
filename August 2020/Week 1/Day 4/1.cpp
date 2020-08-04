@@ -17,7 +17,7 @@ typedef long long ll;
     while (test--)
 
 #define cll(a, b) cin >> a >> b
-#define YES cout << "YES\n"
+#define YES cout << "Yes\n"
 #define NO cout << "NO\n"
 
 #define vi vector<int>
